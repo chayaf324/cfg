@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Only public, indexable pages. /user is the same simulator as the home page (its canonical points to /), so it is not listed;
+     /enrollment opens a registration on every visit and is blocked in robots.txt. Add new content pages here when they exist. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://bechochma.co.il/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>

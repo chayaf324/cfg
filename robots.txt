@@ -1,0 +1,13 @@
+# bechochma.co.il
+User-agent: *
+Allow: /
+# /enrollment opens a NEW registration on every visit and moves on to a personal link that carries an access token:
+# never crawl any of it (a crawler that renders the page could open registrations)
+Disallow: /enrollment
+# staff screens
+Disallow: /manager
+Disallow: /admin
+Disallow: /fund-simulation
+Disallow: /staff-access
+
+Sitemap: https://bechochma.co.il/sitemap.xml

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-8dQ2WBTUEimb1Jj5RGrPb88UFhV+DK3nJenKhGh4dKA=' 'sha256-q79yR7E6mi0c+Ss+cjlBvLo8Lwd/XDhRorlmUQpuigI=' https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob:; connect-src 'self' https://*.supabase.co https://api.sumit.co.il https://calc-573424770863.me-west1.run.app; frame-src https://challenges.cloudflare.com; object-src 'none'; base-uri 'self'; form-action 'self'" />
+  <!-- the personal link carries the access token: never leak it through a Referer header (also set at runtime by useNoReferrer) -->
+  <meta name="referrer" content="no-referrer" />
+  <link rel="icon" type="image/png" href="/assets/crown-logo-Cn-f1Ft9.png" />
+  <link rel="apple-touch-icon" href="/logo-512.png" />
+  <script>
+    (function () {
+      var redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      if (redirect && redirect !== location.href) {
+        history.replaceState(null, null, redirect);
+      }
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0B0E4A" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800;900&family=Assistant:wght@400;600;700&display=swap" />
+
+  <!-- SEO: the per-page copies (user.html, enrollment.html) rewrite title / description / canonical / og:url - see vite.seo.ts -->
+  <title>הצטרפות לתכנית החיסכון לנישואי הילדים | בחכמה</title>
+  <meta name="description"
+    content="טופס הצטרפות דיגיטלי לתכנית החיסכון לנישואי הילדים של בחכמה – חיסכון חכם לעתיד, משיאים בכבוד." />
+  <meta name="keywords"
+    content="סימולטור תכנון פיננסי, חיסכון חכם לעתיד, משיאים בחכמה, תכנית חיסכון לנישואי הילדים, משיאים בכבוד, הלוואות חתונה, חיסכון לחתונת הילדים, בחכמה" />
+  <meta name="robots" content="noindex, follow" />
+  <link rel="canonical" href="https://bechochma.co.il/enrollment" />
+
+  <!-- link previews (WhatsApp / Facebook / Telegram) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="he_IL" />
+  <meta property="og:site_name" content="בחכמה" />
+  <meta property="og:url" content="https://bechochma.co.il/enrollment" />
+  <meta property="og:title" content="הצטרפות לתכנית החיסכון לנישואי הילדים | בחכמה" />
+  <meta property="og:description"
+    content="טופס הצטרפות דיגיטלי לתכנית החיסכון לנישואי הילדים של בחכמה – חיסכון חכם לעתיד, משיאים בכבוד." />
+  <meta property="og:image" content="https://bechochma.co.il/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="בחכמה – משיאים בחכמה" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- structured data for Google: who the site is (Organization + WebSite) and what it offers (the simulator) -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://bechochma.co.il/#org",
+          "name": "בחכמה",
+          "url": "https://bechochma.co.il/",
+          "logo": "https://bechochma.co.il/logo-512.png",
+          "slogan": "משיאים בחכמה"
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://bechochma.co.il/#website",
+          "name": "בחכמה",
+          "url": "https://bechochma.co.il/",
+          "inLanguage": "he-IL",
+          "publisher": { "@id": "https://bechochma.co.il/#org" }
+        },
+        {
+          "@type": "WebApplication",
+          "name": "סימולטור תכנון פיננסי – בחכמה",
+          "url": "https://bechochma.co.il/",
+          "applicationCategory": "FinanceApplication",
+          "operatingSystem": "Web",
+          "inLanguage": "he-IL",
+          "description": "סימולטור לבניית תכנית חיסכון לנישואי הילדים בשוק ההון, כולל הלוואות לחתונה.",
+          "isAccessibleForFree": true,
+          "publisher": { "@id": "https://bechochma.co.il/#org" }
+        }
+      ]
+    }
+  </script>
+  <script type="module" crossorigin src="/assets/index-BSX6U3mK.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CDMC2uDA.css">
+</head>
+
+<body>
+  <div id="root"></div>
+</body>
+
+</html>
